@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #DB2C46 !important;
+    color: #fff;
+}
+
+/* ============================
+Common or local css
+===============================*/
+
+.container {
+    margin-top: 20px;
+
+}
+
+h1 {
+    margin-bottom: 50px;
+    color: #fff;
+
+}
+
+.play-btn {
+    width: 50px;
+    position: relative;
+    top: -50%;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 3;
+}
+
+.col-md-4:hover .play-btn {
+    opacity: 1;
+}
+
+h2 {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.modal-content {
+    background: transparent !important;
+    border: none !important;
+}
+
+
+
+
+
+.col-md-4 {
+    position: relative;
+
+
+}
+
+.col-md-4::after {
+    position: absolute;
+    content: 'Full Stack web  development course: Class video';
+
+    background: #0c071699;
+    width: 85%;
+    height: 74%;
+    display: block;
+    left: 50%;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+
+    font-size: 25px;
+    color: rgb(159, 211, 64);
+    transition: 2s;
+
+
+}
+
+.col-md-4:hover::after {
+    border: 2px solid rgb(159, 211, 64);
+
+}
+
+a{
+    z-index: 5;
+}
